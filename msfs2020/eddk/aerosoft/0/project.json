@@ -1,0 +1,15 @@
+{
+  "authors": ["SimonTricks"],
+  "contributors": [],
+  "description": "Profile for Aerosoft's Cologne Bonn EDDK",
+  "profileVariants": [
+    {
+      "name": "GSX VDGS",
+      "files": ["EDDK-GSXVDGS.ini"]
+    },
+    {
+      "name": "Aerosoft VDGS",
+      "files": ["EDDK-ASVDGS.ini"]
+    }
+  ]
+}

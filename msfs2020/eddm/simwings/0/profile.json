@@ -1,0 +1,16 @@
+{
+  "authors": ["SimonTricks"],
+  "contributors": [],
+  "description": "Profile for Simwings' EDDM v2",
+  "requiresVersion": "Simwings EDDM v2",
+  "profileVariants": [
+    {
+      "name": "Default",
+      "files": ["eddm-simwings.ini", "eddm-simwings.py"]
+    },
+    {
+      "name": "Aerosoft VDGS",
+      "files": ["eddm-simwings ASVDGS.ini", "eddm-simwings.py"]
+    }
+  ]
+}
