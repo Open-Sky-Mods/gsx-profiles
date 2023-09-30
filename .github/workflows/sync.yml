@@ -16,5 +16,7 @@ jobs:
     steps:
       - name: setup bun
         uses: oven-sh/setup-bun@v1
+      - name: checkout repo
+        uses: actions/checkout@v4
       - name: run sync script
         run: bun run ./scripts/sync.ts
