@@ -60,6 +60,7 @@ async function syncToSupabase() {
 }
 
 async function syncWithSupabase(slug: string, profile: Profile) {
+  console.log("syncing", slug);
   const supabase = createClient<Database>(
     "https://piymwrovuocnfoikcbwq.supabase.co",
     process.env.SUPABASE_KEY || ""
