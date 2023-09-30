@@ -128,8 +128,10 @@ async function syncWithSupabase(slug: string, profile: Profile) {
     .flat();
 
   const { error: filesError } = await supabase.from("files").upsert(files);
-
-  console.log({ error: filesError });
+  if (filesError) {
+    console.error(filesError);
+    process.exit(1);
+  }
 }
 
 async function readDirectory(...dirs: string[]) {
