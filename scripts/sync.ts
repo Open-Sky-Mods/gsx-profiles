@@ -27,7 +27,7 @@ async function syncToSupabase() {
           airport,
           addon,
           profileId,
-          "changelog.md"
+          "CHANGELOG.md"
         );
         const profileJson = await readFile(profilePath, "utf-8");
         const changelogMd = await readFile(changelogPath, "utf-8");
