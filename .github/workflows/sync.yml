@@ -1,0 +1,20 @@
+name: Sync to Supabase
+on:
+  push:
+    branches:
+      - main
+
+env:
+  SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+  SUPABASE_EMAIL: ${{ secrets.SUPABASE_EMAIL }}
+  SUPABASE_PASSWORD: ${{ secrets.SUPABASE_PASSWORD }}
+
+jobs:
+  sync_to_supabase:
+    name: Sync with Supabase
+    runs-on: ubuntu-20.04
+    steps:
+      - name: setup bun
+        uses: oven-sh/setup-bun@v1
+      - name: run sync script
+        run: bun run ./scripts/sync.ts
