@@ -1,0 +1,11 @@
+{
+  "authors": ["Lms25"],
+  "contributors": [],
+  "description": "Test Profile, don't use it!",
+  "profileVariants": [
+    {
+      "name": "Default",
+      "files": ["lowg-orbx.ini"]
+    }
+  ]
+}
